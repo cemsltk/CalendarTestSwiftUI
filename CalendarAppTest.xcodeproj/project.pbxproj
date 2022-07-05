@@ -14,6 +14,9 @@
 		2398296F28730F9A0088D5B5 /* CalendarAppTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398296E28730F9A0088D5B5 /* CalendarAppTestTests.swift */; };
 		2398297928730F9A0088D5B5 /* CalendarAppTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398297828730F9A0088D5B5 /* CalendarAppTestUITests.swift */; };
 		2398297B28730F9A0088D5B5 /* CalendarAppTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398297A28730F9A0088D5B5 /* CalendarAppTestUITestsLaunchTests.swift */; };
+		239829892873139E0088D5B5 /* ElegantCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 239829882873139E0088D5B5 /* ElegantCalendar */; };
+		239829922873181B0088D5B5 /* ElegantCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 239829912873181B0088D5B5 /* ElegantCalendar */; };
+		23982994287319120088D5B5 /* brilliantViolet.colorset in Resources */ = {isa = PBXBuildFile; fileRef = 23982993287319120088D5B5 /* brilliantViolet.colorset */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,7 @@
 		2398297428730F9A0088D5B5 /* CalendarAppTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendarAppTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2398297828730F9A0088D5B5 /* CalendarAppTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarAppTestUITests.swift; sourceTree = "<group>"; };
 		2398297A28730F9A0088D5B5 /* CalendarAppTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarAppTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		23982993287319120088D5B5 /* brilliantViolet.colorset */ = {isa = PBXFileReference; lastKnownFileType = folder; name = brilliantViolet.colorset; path = Assets.xcassets/brilliantViolet.colorset; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				239829892873139E0088D5B5 /* ElegantCalendar in Frameworks */,
+				239829922873181B0088D5B5 /* ElegantCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +103,7 @@
 				2398295D28730F990088D5B5 /* CalendarAppTestApp.swift */,
 				2398295F28730F990088D5B5 /* ContentView.swift */,
 				2398296128730F9A0088D5B5 /* Assets.xcassets */,
+				23982993287319120088D5B5 /* brilliantViolet.colorset */,
 				2398296328730F9A0088D5B5 /* Preview Content */,
 			);
 			path = CalendarAppTest;
@@ -143,6 +150,10 @@
 			dependencies = (
 			);
 			name = CalendarAppTest;
+			packageProductDependencies = (
+				239829882873139E0088D5B5 /* ElegantCalendar */,
+				239829912873181B0088D5B5 /* ElegantCalendar */,
+			);
 			productName = CalendarAppTest;
 			productReference = 2398295A28730F990088D5B5 /* CalendarAppTest.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,11 @@
 				Base,
 			);
 			mainGroup = 2398295128730F990088D5B5;
+			packageReferences = (
+				239829872873139D0088D5B5 /* XCRemoteSwiftPackageReference "ElegantCalendar" */,
+				2398298F287316890088D5B5 /* XCRemoteSwiftPackageReference "ElegantCalendar" */,
+				239829902873181B0088D5B5 /* XCRemoteSwiftPackageReference "ElegantCalendar" */,
+			);
 			productRefGroup = 2398295B28730F990088D5B5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23982994287319120088D5B5 /* brilliantViolet.colorset in Resources */,
 				2398296528730F9A0088D5B5 /* Preview Assets.xcassets in Resources */,
 				2398296228730F9A0088D5B5 /* Assets.xcassets in Resources */,
 			);
@@ -583,6 +600,46 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		239829872873139D0088D5B5 /* XCRemoteSwiftPackageReference "ElegantCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ThasianX/ElegantCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		2398298F287316890088D5B5 /* XCRemoteSwiftPackageReference "ElegantCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ThasianX/ElegantCalendar.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		239829902873181B0088D5B5 /* XCRemoteSwiftPackageReference "ElegantCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ThasianX/ElegantCalendar.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		239829882873139E0088D5B5 /* ElegantCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 239829872873139D0088D5B5 /* XCRemoteSwiftPackageReference "ElegantCalendar" */;
+			productName = ElegantCalendar;
+		};
+		239829912873181B0088D5B5 /* ElegantCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2398298F287316890088D5B5 /* XCRemoteSwiftPackageReference "ElegantCalendar" */;
+			productName = ElegantCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2398295228730F990088D5B5 /* Project object */;
 }
